@@ -21,9 +21,12 @@ To set up and run the project, you'll need Python 3 installed on your machine. F
 
 
 ```bash
-git clone <repository-url>
-cd latency-data-simulation
+git clone git@github.com:benjdauno/latency_statistical_analysis_demo.git
+cd latency_statistical_analysis_demo
 make setup
+make run
 ```
 
-You can vary the parameters n (the total number of data points), and m (The percent of data points sampled) to see how this affects the accuracy of the p99 calculation
+Visualizations of the generated data points are stored in the results folder.
+
+You can vary the parameters n (the total number of data points), and m (The percent of data points sampled) to see how this affects the accuracy of the p99 calculation.
