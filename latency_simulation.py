@@ -124,7 +124,7 @@ class LatencyAnalyzer:
 # Usage example
 z = 5  # Number of iterations
 n = 10000  # Number of data points per iteration
-m = 10  # Percentage of data points to sample
+m = 20  # Percentage of data points to sample
 
 # Create results directory if not exists
 if not os.path.exists("results"):
