@@ -75,19 +75,12 @@ class LatencyAnalyzer:
             sampled_p99s.append(result[5])
 
         # Calculate standard errors
-        se_full_p90 = self.calculate_standard_error(full_p90s)
-        se_full_p95 = self.calculate_standard_error(full_p95s)
-        se_full_p99 = self.calculate_standard_error(full_p99s)
 
         se_sampled_p90 = self.calculate_standard_error(sampled_p90s)
         se_sampled_p95 = self.calculate_standard_error(sampled_p95s)
         se_sampled_p99 = self.calculate_standard_error(sampled_p99s)
 
         # Report standard error
-        print("\nStandard Error across iterations:")
-        print(f'  Full Data p90 SE: {se_full_p90:.2f}')
-        print(f'  Full Data p95 SE: {se_full_p95:.2f}')
-        print(f'  Full Data p99 SE: {se_full_p99:.2f}')
         print(f'  Sampled Data p90 SE: {se_sampled_p90:.2f}')
         print(f'  Sampled Data p95 SE: {se_sampled_p95:.2f}')
         print(f'  Sampled Data p99 SE: {se_sampled_p99:.2f}')
